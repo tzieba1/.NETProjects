@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\ImportAndInsertionSortCSVFile\ImportAndInsertionSortCSVFile\bin\Debug\ImportAndInsertionSortCSVFile.exe.config
+C:\Users\User\source\repos\ImportAndInsertionSortCSVFile\ImportAndInsertionSortCSVFile\bin\Debug\ImportAndInsertionSortCSVFile.exe
+C:\Users\User\source\repos\ImportAndInsertionSortCSVFile\ImportAndInsertionSortCSVFile\bin\Debug\ImportAndInsertionSortCSVFile.pdb
+C:\Users\User\source\repos\ImportAndInsertionSortCSVFile\ImportAndInsertionSortCSVFile\obj\Debug\ImportAndInsertionSortCSVFile.csprojAssemblyReference.cache
+C:\Users\User\source\repos\ImportAndInsertionSortCSVFile\ImportAndInsertionSortCSVFile\obj\Debug\ImportAndInsertionSortCSVFile.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ImportAndInsertionSortCSVFile\ImportAndInsertionSortCSVFile\obj\Debug\ImportAndInsertionSortCSVFile.exe
+C:\Users\User\source\repos\ImportAndInsertionSortCSVFile\ImportAndInsertionSortCSVFile\obj\Debug\ImportAndInsertionSortCSVFile.pdb
