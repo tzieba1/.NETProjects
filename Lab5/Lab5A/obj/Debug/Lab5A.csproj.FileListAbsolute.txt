@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Lab5\Lab5A\bin\Debug\Lab5A.exe.config
+C:\Users\User\source\repos\Lab5\Lab5A\bin\Debug\Lab5A.exe
+C:\Users\User\source\repos\Lab5\Lab5A\bin\Debug\Lab5A.pdb
+C:\Users\User\source\repos\Lab5\Lab5A\obj\Debug\Lab5A.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Lab5\Lab5A\obj\Debug\Lab5A.Properties.Resources.resources
+C:\Users\User\source\repos\Lab5\Lab5A\obj\Debug\Lab5A.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Lab5\Lab5A\obj\Debug\Lab5A.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lab5\Lab5A\obj\Debug\Lab5A.exe
+C:\Users\User\source\repos\Lab5\Lab5A\obj\Debug\Lab5A.pdb
+C:\Users\User\source\repos\Lab5\Lab5A\obj\Debug\Lab5A.DropInTheBucketForm.resources
