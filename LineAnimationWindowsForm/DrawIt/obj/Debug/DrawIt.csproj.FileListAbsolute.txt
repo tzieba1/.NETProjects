@@ -1,0 +1,10 @@
+C:\Users\000403596\source\repos\DrawIt\DrawIt\bin\Debug\DrawIt.exe.config
+C:\Users\000403596\source\repos\DrawIt\DrawIt\bin\Debug\DrawIt.exe
+C:\Users\000403596\source\repos\DrawIt\DrawIt\bin\Debug\DrawIt.pdb
+C:\Users\000403596\source\repos\DrawIt\DrawIt\obj\Debug\DrawIt.csprojAssemblyReference.cache
+C:\Users\000403596\source\repos\DrawIt\DrawIt\obj\Debug\DrawIt.Form1.resources
+C:\Users\000403596\source\repos\DrawIt\DrawIt\obj\Debug\DrawIt.Properties.Resources.resources
+C:\Users\000403596\source\repos\DrawIt\DrawIt\obj\Debug\DrawIt.csproj.GenerateResource.cache
+C:\Users\000403596\source\repos\DrawIt\DrawIt\obj\Debug\DrawIt.csproj.CoreCompileInputs.cache
+C:\Users\000403596\source\repos\DrawIt\DrawIt\obj\Debug\DrawIt.exe
+C:\Users\000403596\source\repos\DrawIt\DrawIt\obj\Debug\DrawIt.pdb

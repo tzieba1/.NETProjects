@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\Lab2B\Lab2B\bin\Release\Lab2B.exe.config
+C:\Users\User\source\repos\Lab2B\Lab2B\bin\Release\Lab2B.exe
+C:\Users\User\source\repos\Lab2B\Lab2B\bin\Release\Lab2B.pdb
+C:\Users\User\source\repos\Lab2B\Lab2B\obj\Release\Lab2B.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Lab2B\Lab2B\obj\Release\Lab2B.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lab2B\Lab2B\obj\Release\Lab2B.exe
+C:\Users\User\source\repos\Lab2B\Lab2B\obj\Release\Lab2B.pdb
+C:\Users\User\source\repos\Lab2B\Lab2B\obj\Release\Lab2B.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Lab2B\Lab2B\obj\Release\Lab2B.PerfectCutHairSalonForm.resources
+C:\Users\User\source\repos\Lab2B\Lab2B\obj\Release\Lab2.Properties.Resources.resources

@@ -1,0 +1,51 @@
+C:\Users\Mark\Desktop\Courses\COMP10204\Week10Exercise\Sorting\Sorting\bin\Debug\Sorting.exe.config
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\bin\Debug\Sorting.exe.config
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\bin\Debug\Sorting.exe
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\bin\Debug\Sorting.pdb
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.csprojAssemblyReference.cache
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.Form1.resources
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.Properties.Resources.resources
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.csproj.GenerateResource.cache
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.exe
+C:\Users\Mark\Desktop\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.pdb
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\bin\Debug\Sorting.exe.config
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\bin\Debug\Sorting.exe
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\bin\Debug\Sorting.pdb
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.csprojResolveAssemblyReference.cache
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.Form1.resources
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.Properties.Resources.resources
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.csproj.GenerateResource.Cache
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.exe
+C:\myendt\educ\Comp10204\Fall 2018\Week10\Week10Exercise\Week10Exercise\Sorting\Sorting\obj\Debug\Sorting.pdb
+H:\COMP10204\Sorting\Sorting\bin\Debug\Sorting.exe.config
+H:\COMP10204\Sorting\Sorting\bin\Debug\Sorting.exe
+H:\COMP10204\Sorting\Sorting\bin\Debug\Sorting.pdb
+H:\COMP10204\Sorting\Sorting\obj\Debug\Sorting.csprojResolveAssemblyReference.cache
+H:\COMP10204\Sorting\Sorting\obj\Debug\Sorting.Form1.resources
+H:\COMP10204\Sorting\Sorting\obj\Debug\Sorting.Properties.Resources.resources
+H:\COMP10204\Sorting\Sorting\obj\Debug\Sorting.csproj.GenerateResource.Cache
+H:\COMP10204\Sorting\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+H:\COMP10204\Sorting\Sorting\obj\Debug\Sorting.exe
+H:\COMP10204\Sorting\Sorting\obj\Debug\Sorting.pdb
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.csprojAssemblyReference.cache
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.Form1.resources
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.Properties.Resources.resources
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.csproj.GenerateResource.cache
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.exe
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.pdb
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\bin\Debug\Sorting.exe.config
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\bin\Debug\Sorting.exe
+C:\myendt\educ\Comp10204\Fall2019 Lab Exercises\Week10\Week10LabExercise Lambda and Sorting\Sorting\bin\Debug\Sorting.pdb
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\bin\Debug\Sorting.exe.config
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\bin\Debug\Sorting.exe
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\bin\Debug\Sorting.pdb
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.csprojAssemblyReference.cache
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.Form1.resources
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.Properties.Resources.resources
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.csproj.GenerateResource.cache
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.csproj.CoreCompileInputs.cache
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.exe
+C:\myendt\educ\Comp10204\Fall 2019\Lab Exercises and Solutions\Lab Exercises and Solutions\Week10\Week10LabExercise Lambda and Sorting\Sorting\obj\Debug\Sorting.pdb

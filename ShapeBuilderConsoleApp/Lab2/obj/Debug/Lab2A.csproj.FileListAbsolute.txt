@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\Lab2\Lab2\obj\Debug\Lab2A.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Lab2\Lab2\obj\Debug\Lab2A.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lab2\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\User\source\repos\Lab2\Lab2\bin\Debug\Lab2.exe
+C:\Users\User\source\repos\Lab2\Lab2\bin\Debug\Lab2.pdb
+C:\Users\User\source\repos\Lab2\Lab2\obj\Debug\Lab2.exe
+C:\Users\User\source\repos\Lab2\Lab2\obj\Debug\Lab2.pdb
+C:\Users\User\Documents\MOHAWK_FALL2019_SEM3 (2)\COMP_10204\Lab2\Lab2\ShapeBuilderConsoleApp\Lab2\bin\Debug\Lab2A.exe.config
+C:\Users\User\Documents\MOHAWK_FALL2019_SEM3 (2)\COMP_10204\Lab2\Lab2\ShapeBuilderConsoleApp\Lab2\bin\Debug\Lab2A.exe
+C:\Users\User\Documents\MOHAWK_FALL2019_SEM3 (2)\COMP_10204\Lab2\Lab2\ShapeBuilderConsoleApp\Lab2\bin\Debug\Lab2A.pdb
+C:\Users\User\Documents\MOHAWK_FALL2019_SEM3 (2)\COMP_10204\Lab2\Lab2\ShapeBuilderConsoleApp\Lab2\obj\Debug\Lab2A.csprojAssemblyReference.cache
+C:\Users\User\Documents\MOHAWK_FALL2019_SEM3 (2)\COMP_10204\Lab2\Lab2\ShapeBuilderConsoleApp\Lab2\obj\Debug\Lab2A.exe
+C:\Users\User\Documents\MOHAWK_FALL2019_SEM3 (2)\COMP_10204\Lab2\Lab2\ShapeBuilderConsoleApp\Lab2\obj\Debug\Lab2A.pdb
