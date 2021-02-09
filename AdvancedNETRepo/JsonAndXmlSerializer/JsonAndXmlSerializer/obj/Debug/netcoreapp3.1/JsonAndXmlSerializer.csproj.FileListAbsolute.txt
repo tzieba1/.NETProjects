@@ -1,0 +1,8 @@
+C:\Users\User\source\repos\JsonAndXmlSerializer\JsonAndXmlSerializer\obj\Debug\netcoreapp3.1\JsonAndXmlSerializer.csprojAssemblyReference.cache
+C:\Users\User\source\repos\JsonAndXmlSerializer\JsonAndXmlSerializer\obj\Debug\netcoreapp3.1\JsonAndXmlSerializer.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\JsonAndXmlSerializer\JsonAndXmlSerializer\obj\Debug\netcoreapp3.1\JsonAndXmlSerializer.AssemblyInfo.cs
+C:\Users\User\source\repos\JsonAndXmlSerializer\JsonAndXmlSerializer\bin\Debug\netcoreapp3.1\JsonAndXmlSerializer.deps.json
+C:\Users\User\source\repos\JsonAndXmlSerializer\JsonAndXmlSerializer\bin\Debug\netcoreapp3.1\JsonAndXmlSerializer.dll
+C:\Users\User\source\repos\JsonAndXmlSerializer\JsonAndXmlSerializer\bin\Debug\netcoreapp3.1\JsonAndXmlSerializer.pdb
+C:\Users\User\source\repos\JsonAndXmlSerializer\JsonAndXmlSerializer\obj\Debug\netcoreapp3.1\JsonAndXmlSerializer.dll
+C:\Users\User\source\repos\JsonAndXmlSerializer\JsonAndXmlSerializer\obj\Debug\netcoreapp3.1\JsonAndXmlSerializer.pdb

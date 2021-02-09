@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\bin\Debug\netcoreapp3.1\ReflectionExample.exe
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\bin\Debug\netcoreapp3.1\ReflectionExample.deps.json
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\bin\Debug\netcoreapp3.1\ReflectionExample.runtimeconfig.json
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\bin\Debug\netcoreapp3.1\ReflectionExample.runtimeconfig.dev.json
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\bin\Debug\netcoreapp3.1\ReflectionExample.dll
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\bin\Debug\netcoreapp3.1\ReflectionExample.pdb
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\obj\Debug\netcoreapp3.1\ReflectionExample.csprojAssemblyReference.cache
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\obj\Debug\netcoreapp3.1\ReflectionExample.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\obj\Debug\netcoreapp3.1\ReflectionExample.AssemblyInfo.cs
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\obj\Debug\netcoreapp3.1\ReflectionExample.dll
+C:\Users\User\source\repos\ReflectionExample\ReflectionExample\obj\Debug\netcoreapp3.1\ReflectionExample.pdb

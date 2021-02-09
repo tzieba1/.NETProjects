@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\bin\Debug\netcoreapp3.1\AsynchronousExamples.exe
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\bin\Debug\netcoreapp3.1\AsynchronousExamples.deps.json
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\bin\Debug\netcoreapp3.1\AsynchronousExamples.runtimeconfig.json
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\bin\Debug\netcoreapp3.1\AsynchronousExamples.runtimeconfig.dev.json
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\bin\Debug\netcoreapp3.1\AsynchronousExamples.dll
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\bin\Debug\netcoreapp3.1\AsynchronousExamples.pdb
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\obj\Debug\netcoreapp3.1\AsynchronousExamples.csprojAssemblyReference.cache
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\obj\Debug\netcoreapp3.1\AsynchronousExamples.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\obj\Debug\netcoreapp3.1\AsynchronousExamples.AssemblyInfo.cs
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\obj\Debug\netcoreapp3.1\AsynchronousExamples.dll
+C:\Users\User\source\repos\AsynchronousExamples\AsynchronousExamples\obj\Debug\netcoreapp3.1\AsynchronousExamples.pdb

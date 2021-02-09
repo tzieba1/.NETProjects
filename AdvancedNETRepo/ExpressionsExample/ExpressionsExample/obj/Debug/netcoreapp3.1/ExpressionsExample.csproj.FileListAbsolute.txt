@@ -1,0 +1,11 @@
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\bin\Debug\netcoreapp3.1\ExpressionsExample.exe
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\bin\Debug\netcoreapp3.1\ExpressionsExample.deps.json
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\bin\Debug\netcoreapp3.1\ExpressionsExample.runtimeconfig.json
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\bin\Debug\netcoreapp3.1\ExpressionsExample.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\bin\Debug\netcoreapp3.1\ExpressionsExample.dll
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\bin\Debug\netcoreapp3.1\ExpressionsExample.pdb
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\obj\Debug\netcoreapp3.1\ExpressionsExample.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\obj\Debug\netcoreapp3.1\ExpressionsExample.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\obj\Debug\netcoreapp3.1\ExpressionsExample.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\obj\Debug\netcoreapp3.1\ExpressionsExample.dll
+C:\Users\User\Documents\GitHub\AdvancedDotNet\ExpressionsExample\ExpressionsExample\obj\Debug\netcoreapp3.1\ExpressionsExample.pdb
