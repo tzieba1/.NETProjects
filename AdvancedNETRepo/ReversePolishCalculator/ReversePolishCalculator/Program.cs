@@ -7,6 +7,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Text.RegularExpressions;
 
 namespace ReversePolishCalculator
 {
@@ -91,15 +92,17 @@ namespace ReversePolishCalculator
     public static bool displayResult(string userInput)
     {
       Console.ReadKey();
+      //TODO: Validate the expression input from the user.
+      Expression validExpression = validateExpression(userInput);
       //TODO: Calculate result of he expression tree.
-      double result = 0.0;
+      double result = calculateExpression(userInput);
 
       // Display result and prompt for user to continue calculating other expressions or exiting.
       bool first = true;
       while (true)
       {
-        if (first) { Console.WriteLine($"Result: {result}"); }              // Only show result once.
-        Console.Write("Evaluate another reverse polish expression (y/n)?"); // Can repeatedly display.
+        if (first) { Console.WriteLine($"  Result: {result}"); }              // Only show result once.
+        Console.Write("  Evaluate another reverse polish expression? (y/n)"); // Can repeatedly display.
         string userDecision = Console.ReadKey().KeyChar.ToString();         // Detect user keystroke.
 
         switch (userDecision.ToLower()) // Ensuring userDecision filtered to detect capital letters.
@@ -109,12 +112,69 @@ namespace ReversePolishCalculator
           case "n":
             return false;   // Return to exit the program.
           default:
-            Console.Write("INVALID KEYSTROKE; TRY AGAIN.\n");
+            Console.Write("  INVALID KEYSTROKE; TRY AGAIN.\n");
             first = false;  // Prompt user for another decision when keystroke is invalid.
             break;
         }
       }
 
+    }
+
+    /// <summary>
+    /// Method that validates user input to be a proper expression in reverse polish notation and
+    /// has integers within acceptable limits for the data type int.
+    /// </summary>
+    /// <param name="userInput"></param>
+    /// <returns></returns>
+    private static Expression validateExpression(string userInput)
+    {
+      string validPattern = @"[\s\+\-\*\/\^0123456789]";      // Valid operators and digits in positive character group.
+      string invalidPattern = @"[^\s\+\-\*\/\^0123456789]";   // Negation of valid character group (all other chars).
+
+      if (Regex.IsMatch(userInput, validPattern) && !Regex.IsMatch(userInput, invalidPattern))  // Validate characters.
+      {
+        if (Regex.IsMatch(userInput[0].ToString(), @"[\d]"))  // Validate first character is integer.
+        {
+          Expression builtExpression = buildExpressionTree(userInput);
+        }
+        else
+          throw new FormatException("Expression must start with number.");
+      }
+      else
+        throw new FormatException("Invalid characters present.");
+
+      return null;
+    }
+
+    /// <summary>
+    /// Builds an expression tree from validated user input and returns it.
+    /// </summary>
+    /// <param name="userInput"></param>
+    /// <returns>Expression representing userInput.</returns>
+    private static Expression buildExpressionTree(string userInput)
+    {
+      //int startIndex = 0;
+      //while(currentIndex < userInput.Length && )
+
+      //ReversePolishExpressionVisitor visitor = new ReversePolishExpressionVisitor(Expression.Constant((int)userInput[0]));
+      //Expression builtExpression = Expression.Constant()
+
+      //foreach (char character in userInput)  // Create and stack valid expressions by scanning userInput characters.
+      //{
+
+      //}
+
+      return null;
+    }
+
+    /// <summary>
+    /// Method that accepts an expression re
+    /// </summary>
+    /// <param name="userInput"></param>
+    /// <returns></returns>
+    private static double calculateExpression(string userInput)
+    {
+      throw new NotImplementedException();
     }
   }
 }
