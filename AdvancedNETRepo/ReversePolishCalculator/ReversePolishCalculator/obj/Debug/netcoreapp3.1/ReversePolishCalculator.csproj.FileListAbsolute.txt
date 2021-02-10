@@ -1,0 +1,13 @@
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\bin\Debug\netcoreapp3.1\ReversePolishCalculator.exe
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\bin\Debug\netcoreapp3.1\ReversePolishCalculator.deps.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\bin\Debug\netcoreapp3.1\ReversePolishCalculator.runtimeconfig.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\bin\Debug\netcoreapp3.1\ReversePolishCalculator.runtimeconfig.dev.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\bin\Debug\netcoreapp3.1\ReversePolishCalculator.dll
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\bin\Debug\netcoreapp3.1\ReversePolishCalculator.pdb
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\obj\Debug\netcoreapp3.1\ReversePolishCalculator.csprojAssemblyReference.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\obj\Debug\netcoreapp3.1\ReversePolishCalculator.AssemblyInfoInputs.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\obj\Debug\netcoreapp3.1\ReversePolishCalculator.AssemblyInfo.cs
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\obj\Debug\netcoreapp3.1\ReversePolishCalculator.csproj.CoreCompileInputs.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\obj\Debug\netcoreapp3.1\ReversePolishCalculator.dll
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\obj\Debug\netcoreapp3.1\ReversePolishCalculator.pdb
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ReversePolishCalculator\ReversePolishCalculator\obj\Debug\netcoreapp3.1\ReversePolishCalculator.genruntimeconfig.cache

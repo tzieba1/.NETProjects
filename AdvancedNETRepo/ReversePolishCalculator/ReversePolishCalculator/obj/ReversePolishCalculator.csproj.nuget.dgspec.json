@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj": {}
+    "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj": {
+    "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj",
         "projectName": "ReversePolishCalculator",
-        "projectPath": "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj",
+        "projectPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ReversePolishCalculator\\ReversePolishCalculator\\ReversePolishCalculator.csproj",
         "packagesPath": "C:\\Users\\tzieb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ReversePolishCalculator\\ReversePolishCalculator\\obj\\",
+        "outputPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ReversePolishCalculator\\ReversePolishCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

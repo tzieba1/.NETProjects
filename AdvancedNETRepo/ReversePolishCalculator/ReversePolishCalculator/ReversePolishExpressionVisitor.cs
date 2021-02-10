@@ -13,6 +13,11 @@ namespace ReversePolishCalculator
 {
   public class ReversePolishExpressionVisitor : ExpressionVisitor
   {
+    /// <summary>
+    /// Prooperty representing the root expression for this reverse polish expression tree visitor.
+    /// </summary>
+    public Expression rootExpression { get; set; }
+
     public override Expression Visit(Expression node)
     {
       return base.Visit(node);

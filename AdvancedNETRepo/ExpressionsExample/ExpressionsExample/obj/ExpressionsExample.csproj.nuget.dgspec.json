@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ExpressionsExample\\ExpressionsExample\\ExpressionsExample.csproj": {}
+    "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ExpressionsExample\\ExpressionsExample\\ExpressionsExample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ExpressionsExample\\ExpressionsExample\\ExpressionsExample.csproj": {
+    "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ExpressionsExample\\ExpressionsExample\\ExpressionsExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ExpressionsExample\\ExpressionsExample\\ExpressionsExample.csproj",
+        "projectUniqueName": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ExpressionsExample\\ExpressionsExample\\ExpressionsExample.csproj",
         "projectName": "ExpressionsExample",
-        "projectPath": "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ExpressionsExample\\ExpressionsExample\\ExpressionsExample.csproj",
+        "projectPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ExpressionsExample\\ExpressionsExample\\ExpressionsExample.csproj",
         "packagesPath": "C:\\Users\\tzieb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tzieb\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\ExpressionsExample\\ExpressionsExample\\obj\\",
+        "outputPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\ExpressionsExample\\ExpressionsExample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
