@@ -9,3 +9,16 @@ C:\Users\User\Documents\MOHAWK_WINTER2021_SEM5\COMP10068_Advanced.NETProgramming
 C:\Users\User\Documents\MOHAWK_WINTER2021_SEM5\COMP10068_Advanced.NETProgramming\VisualStudioRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.AssemblyInfo.cs
 C:\Users\User\Documents\MOHAWK_WINTER2021_SEM5\COMP10068_Advanced.NETProgramming\VisualStudioRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.dll
 C:\Users\User\Documents\MOHAWK_WINTER2021_SEM5\COMP10068_Advanced.NETProgramming\VisualStudioRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.pdb
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\bin\Debug\netcoreapp3.1\ExpressionMethodExamples.exe
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\bin\Debug\netcoreapp3.1\ExpressionMethodExamples.deps.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\bin\Debug\netcoreapp3.1\ExpressionMethodExamples.runtimeconfig.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\bin\Debug\netcoreapp3.1\ExpressionMethodExamples.runtimeconfig.dev.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\bin\Debug\netcoreapp3.1\ExpressionMethodExamples.dll
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\bin\Debug\netcoreapp3.1\ExpressionMethodExamples.pdb
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.csprojAssemblyReference.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.AssemblyInfoInputs.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.AssemblyInfo.cs
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.csproj.CoreCompileInputs.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.dll
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.pdb
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\ExpressionMethodExamples\ExpressionMethodExamples\obj\Debug\netcoreapp3.1\ExpressionMethodExamples.genruntimeconfig.cache

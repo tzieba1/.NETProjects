@@ -13,10 +13,6 @@ namespace ReversePolishCalculator
 {
   class Program
   {
-    // Create stacks for expressions and re-evaluated expressions used to build an expression tree.
-    Stack<Expression> expressionStack = new Stack<Expression>();
-    Stack<Expression> updatedExpressionStack = new Stack<Expression>();
-
     public static void Main(string[] args)
     {
       bool running = true;                // Flag used to remain in loop displaying options.
@@ -153,22 +149,64 @@ namespace ReversePolishCalculator
     /// <returns>Expression representing userInput.</returns>
     private static Expression buildExpressionTree(string userInput)
     {
-      //int startIndex = 0;
-      //while(currentIndex < userInput.Length && )
+      Stack<ConstantExpression> partialExpressionTree = new Stack<ConstantExpression>();
 
-      //ReversePolishExpressionVisitor visitor = new ReversePolishExpressionVisitor(Expression.Constant((int)userInput[0]));
-      //Expression builtExpression = Expression.Constant()
+      //TODO: Stack constant expressions until an operator is reached, then unstack constants and build expression 
+      //      (throw excpetion if another number reached before all constants unstacked or invalid character detected).
+      foreach (char character in userInput)
+      {
+        if (!character.Equals(' ') && !Regex.IsMatch(character.ToString(), @"[\+\-\*\/\^]")) //Check for non-whitespace characters to stack constants.
+          partialExpressionTree.Push(Expression.Constant(int.Parse(character.ToString()))); // Throws exception if non-int.
+        else if (!Regex.IsMatch(character.ToString(), @"[\+\-\*\/\^]"))   
+        {
+          //TODO: Build partial expression by unstacking constants and throw exception if stack is not empty upon reaching next constant.
+          Expression<Func<double, double, double>> partialBinaryExpression;
+          switch (character)
+          {
+            case '+':
+              partialBinaryExpression = (c1, c2) => c1 + c2;
+              break;
+            case '-':
+              partialBinaryExpression = (c1, c2) => c1 - c2;
+              break;
+            case '*':
+              partialBinaryExpression = (c1, c2) => c1 * c2;
+              break;
+            case '/':
+              partialBinaryExpression = (c1, c2) => c1 / c2;
+              break;
+            case '^':
+              partialBinaryExpression = (c1, c2) => Math.Pow(c1, c2);
+              break;
+            default:
+              break;
+          }
+        }
+        else  // Throw exception for an invalid character detected (not needed based on previous validation?)
+        {
+          throw new ArgumentException($"'{character}' is not a valid character for any supported reverse polish expression.");
+        }
+      }
 
-      //foreach (char character in userInput)  // Create and stack valid expressions by scanning userInput characters.
+      
+      //TODO: Pass each valid partial expression to the expression visitor
+      //int charIndex = 0;
+      //while (!Regex.IsMatch(userInput[charIndex].ToString(), @"[\+\-\*\/\^]"))
       //{
+      //  //TODO: Check for non-whitespace characters to stack constants.
+      //  if(!userInput[charIndex].Equals(' '))
+      //  {
+      //    partialExpressionTree.Push(userInput[charIndex]);
+      //  }
 
+      //  charIndex++;  // Increment index of expression string characters.
       //}
 
       return null;
     }
 
     /// <summary>
-    /// Method that accepts an expression re
+    /// Method that accepts an expression
     /// </summary>
     /// <param name="userInput"></param>
     /// <returns></returns>
