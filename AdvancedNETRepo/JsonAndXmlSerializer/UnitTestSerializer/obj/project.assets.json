@@ -5390,25 +5390,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\tzieb\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\JsonAndXmlSerializer\\UnitTestSerializer\\UnitTestSerializer.csproj",
+      "projectUniqueName": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\JsonAndXmlSerializer\\UnitTestSerializer\\UnitTestSerializer.csproj",
       "projectName": "UnitTestSerializer",
-      "projectPath": "C:\\Users\\User\\source\\repos\\JsonAndXmlSerializer\\UnitTestSerializer\\UnitTestSerializer.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\JsonAndXmlSerializer\\UnitTestSerializer\\obj\\",
+      "projectPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\JsonAndXmlSerializer\\UnitTestSerializer\\UnitTestSerializer.csproj",
+      "packagesPath": "C:\\Users\\tzieb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\JsonAndXmlSerializer\\UnitTestSerializer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tzieb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -5421,9 +5419,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\JsonAndXmlSerializer\\JsonAndXmlSerializer\\JsonAndXmlSerializer.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\JsonAndXmlSerializer\\JsonAndXmlSerializer\\JsonAndXmlSerializer.csproj"
+            "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\JsonAndXmlSerializer\\JsonAndXmlSerializer\\JsonAndXmlSerializer.csproj": {
+              "projectPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\JsonAndXmlSerializer\\JsonAndXmlSerializer\\JsonAndXmlSerializer.csproj"
             }
           }
         }
@@ -5436,6 +5435,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MSTest.TestAdapter": {
             "target": "Package",
@@ -5473,7 +5473,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.111\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

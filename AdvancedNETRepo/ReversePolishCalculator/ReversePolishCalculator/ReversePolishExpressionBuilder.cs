@@ -7,7 +7,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace ReversePolishCalculator
@@ -18,37 +17,6 @@ namespace ReversePolishCalculator
   public class ReversePolishExpressionBuilder : ExpressionVisitor
   {
     /// <summary>
-    /// Prooperty representing the root expression for this reverse polish expression tree visitor.
-    /// Note that this must be reset after partial expressions are parsed and appended to the 
-    /// expression tree being built.
-    /// </summary>
-    public Expression RootExpression { get; set; }
-
-    /// <summary>
-    /// Property that gets ExpressionString, or custom sets it by also building an expression, and 
-    /// setting it as this class' RootExpression to be evaluated.
-    /// </summary>
-    public string ExpressionString
-    {
-      get { return this.ExpressionString; }
-      set
-      {
-        this.ExpressionString = value;
-        BuildExpressionTree(value);
-      }
-    }
-
-    /// <summary>
-    /// Operators stacked for building expressions.
-    /// </summary>
-    private Stack<char> operatorStack = new Stack<char>();
-    
-    /// <summary>
-    /// Constants to be formulated into an expression.
-    /// </summary>
-    private Stack<ConstantExpression> constantExpressionStack = new Stack<ConstantExpression>();
-
-    /// <summary>
     /// Default constructor.
     /// </summary>
     public ReversePolishExpressionBuilder() { }
@@ -57,77 +25,247 @@ namespace ReversePolishCalculator
     /// Constructor that accepts a root node (constant expression) to begin building a reverse
     /// polish expression. Root assigned to partialExpressionStack until first operator reached.
     /// </summary>
-    /// <param name="root"></param>
+    /// <param name="expressionTerms">String list representing each term in expression sequence for building.</param>
     public ReversePolishExpressionBuilder(string expressionString) { this.ExpressionString = expressionString; }
+
+    /// <summary>
+    /// Property that is set from user input in a console program representing a reverse polish expression
+    /// that needs validation and sanitizing from whitespace and to separate expression terms.
+    /// </summary>
+    public string ExpressionString
+    {
+      get { return this.expressionString; }
+      set 
+      { 
+        this.expressionString = value;
+        this.ValidateCharacters();
+        this.SanitizeNumbersAndOperators();
+      }
+    }
+    private string expressionString;
+
+    /// <summary>
+    /// Property that gets this builder's expression terms, or sets expression terms and builds the expression.
+    /// </summary>
+    public List<string> ExpressionTerms
+    {
+      get { return this.expressionTerms; }
+      set
+      {
+        this.expressionTerms = value;
+        BuildExpressionTree();
+      }
+    }
+    private List<string> expressionTerms;
+
+    /// <summary>
+    /// Property representing root expression being built by this reverse polish expression visitor.
+    /// Note that this must be reset after partial expressions are parsed and appended to the expression tree being built.
+    /// </summary>
+    public Expression RootExpression { get; set; }
+
+    /// <summary>
+    /// Result from evaluating current root expression that is built.
+    /// </summary>
+    public double Result { get; private set; }
+
+    /// <summary>
+    /// Operators stacked for building expressions.
+    /// </summary>
+    private List<char> operatorList = new List<char>();
+
+    /// <summary>
+    /// Constants and root expression to be formulated into an new root expression.
+    /// </summary>
+    private Stack<Expression> expressionStack = new Stack<Expression>();
+
+    /// <summary>
+    /// Resets this visitor/builder by clearing all stacks, lists, expressions, and results.
+    /// To be used after throwing exceptions or entering multiple expressions to evaluate.
+    /// </summary>
+    public void Reset()
+    {
+      this.expressionString = "";
+      this.expressionStack.Clear();
+      this.operatorList.Clear();
+      this.expressionTerms.Clear();
+      this.RootExpression = null;
+      this.Result = 0.0;
+    }
+
+    /// <summary>
+    /// Method that validates this ExpressionString up to allowable characters overall, at the start, and at the end.
+    /// </summary>
+    private void ValidateCharacters()
+    {
+      string validPattern = @"[\s\+\-\*\/\^0123456789]";      // Valid operators, numbers, and whitespace in positive character group.
+      string invalidPattern = @"[^\s\+\-\*\/\^0123456789]";   // Negation of valid character group (all other chars).
+
+      // Validate characters (whitespace, numbers, operators).
+      if (Regex.IsMatch(this.expressionString, validPattern) && !Regex.IsMatch(this.expressionString, invalidPattern))
+      {
+        // Validate first non-whitespace character of user input is a number.
+        if (!Regex.IsMatch(this.expressionString, @"^\s*[\d]"))
+          throw new FormatException("Expression must start with number.");
+        // Validate last non-whitespace character of user input is an operator.
+        if (!Regex.IsMatch(this.expressionString, @"[\+\-\*\/\^]\s*$"))
+          throw new FormatException("Expression must end with an operator.");
+      }
+      else
+        throw new FormatException("Invalid characters present.");
+    }
+
+    /// <summary>
+    /// Splits on all whitespace and separates operators and numbers that are contiguous (without whitespace between).
+    /// The ExpressionTerms property is set for this class with the result of separating terms in this method.
+    /// </summary>
+    private void SanitizeNumbersAndOperators()
+    {
+      List<string> expressionTerms = new List<string>();  // To be returned after sanitizing userInput.
+
+      // Pattern used to split and extract numbers and/or operators.
+      Regex whiteSpaceRegex = new Regex(@"\s+", RegexOptions.Compiled);
+
+      // String array containing numbers and/or operators only.
+      string[] sanitizedUserInput = whiteSpaceRegex.Split(this.expressionString);
+
+      // Iterate over characters to add them correctly to the expression terms according to numbers and operators.
+      foreach (string characterSequence in sanitizedUserInput)
+      {
+        // Check for only numbers to add entire number string (representing an integer) to expression terms.
+        if (Regex.IsMatch(characterSequence, @"[0123456789]") && !Regex.IsMatch(characterSequence, @"[\+\-\*\/\^]"))
+          expressionTerms.Add(characterSequence);
+
+        // Check for only operators to add EACH operation to expresion terms.
+        else if (!Regex.IsMatch(characterSequence, @"[0123456789]") && Regex.IsMatch(characterSequence, @"[\+\-\*\/\^]"))
+        {
+          foreach (char operation in characterSequence)
+            expressionTerms.Add(operation.ToString());
+        }
+        // Otherwise, split characters further to extract numbers and operators and add them to expression terms correctly.
+        else
+        {
+          // Add numbers and operators accordingly until end of character sequence.
+          string numberString = "";
+          for (int i = 0; i < characterSequence.Length; i++)
+          {
+            char character = characterSequence[i];
+
+            // Check if current character is an operator to add it, otherwise append it to numberString.
+            if (Regex.IsMatch(character.ToString(), @"[\+\-\*\/\^]"))
+              expressionTerms.Add(character.ToString());
+            else
+              numberString += character;
+
+            // Check for a next character.
+            if (i + 1 < characterSequence.Length)
+            {
+              // Check if current character is number and next character is an operator to add and clear numberString.
+              if (Regex.IsMatch(character.ToString(), @"[0123456789]") &&
+                Regex.IsMatch(characterSequence[i + 1].ToString(), @"[\+\-\*\/\^]"))
+              {
+                expressionTerms.Add(character.ToString());
+                numberString = "";
+              }
+              else
+                numberString += character;
+            }
+            // Check if current character is a number to add it when no characters are left.
+            else if (Regex.IsMatch(character.ToString(), @"[0123456789]"))
+              expressionTerms.Add(character.ToString());
+          }
+        }
+      }
+      this.ExpressionTerms = expressionTerms;
+    }
 
     /// <summary>
     /// Builds an expression tree from validated user input and returns it.
     /// </summary>
-    /// <param name="userInput"></param>
-    /// <returns>Expression representing userInput.</returns>
-    private void BuildExpressionTree(string expressionString)
+    /// <param name="expressionTerms"></param>
+    private void BuildExpressionTree()
     {
-      Regex whiteSpaceRegex = new Regex(@"\s+", RegexOptions.Compiled); // Pattern used to split and extract numbers and/or operators.
-      string[] sanitizedUserInput = whiteSpaceRegex.Split(expressionString);   // String array containing numbers and/or operators only.
+      bool unstackable = false; // Flag lowered when constant/operator stacks full (scanned past operators at front).
 
-      // Handle character sequences without whitespace and having both numbers and operators - where an expression is needed.
-      for (int i = 0; i < sanitizedUserInput.Length; i++)
+      // Handle char sequences without whitespace and with numbers/operators - where root expression needs re-evaluation.
+      for (int i = 0; i < this.expressionTerms.Count; i++)
       {
-        string nonWhiteSpaceSequence = sanitizedUserInput[i];
-        // Check for operators present in a non-whitespace sequence, then build expression using custom reverse polish visitor.
-        if (!Regex.IsMatch(nonWhiteSpaceSequence, @"[\+\-\*\/\^]"))
-          constantExpressionStack.Push(Expression.Constant(int.Parse(nonWhiteSpaceSequence)));
-        
-        //When no operators present, stack the constant expression.
-        else
+        string term = this.expressionTerms[i]; // Current term being scanned in expression.
+
+        // Use "none" as placeholder to avoid i + 1 out of range for next term (when none remaining).
+        string nextTerm = i + 1 < this.expressionTerms.Count ? this.expressionTerms[i + 1] : "none";
+
+        // When term is a number, stack its constant expression.
+        if (Regex.IsMatch(term, @"[0123456789]"))
+          this.expressionStack.Push(Expression.Constant(double.Parse(term)));
+        else  // Otherwise, stack operators until reaching the next number.
         {
-          Regex splitOperatorsRegex = new Regex(@"[0123456789]", RegexOptions.Compiled);  // Pattern used to split and extract operators.
-          Regex splitNumbersRegex = new Regex(@"[\+\-\*\/\^]", RegexOptions.Compiled);    // Pattern used to split and extract numbers.
-
-          string[] numbers = splitNumbersRegex.Split(nonWhiteSpaceSequence);          // Split sequence to extract numbers.
-          //Array.ForEach(numbers, Console.WriteLine);
-          string[] operators = splitOperatorsRegex.Split(nonWhiteSpaceSequence);      // Split sequence to extract operators.   
-          foreach (char operation in operators[0]) { operatorStack.Push(operation); } // Stack operators.
-
-
-          // Set reverse polish visitor root Expression node initially.
-          if (i == 0)
+          // Stack up operators while no numbers found in iterative next terms or expression terms end.
+          while (!unstackable)
           {
-            this.RootExpression = Expression.Constant(int.Parse(numbers[0]));
-          }
-          // Reset root Expression node while an operator and constant expression remains to join to it.
-          else
-          {
-            do  // Check that there is an operator remaining to join constant expression to root node and join expression.
+            this.operatorList.Add(char.Parse(term));  // Push current term onto the operator stack before iterating.
+
+            // Check the next term to decide to advance terms or begin unstacking.
+            if (!Regex.IsMatch(nextTerm, @"[0123456789]") && nextTerm != "none")
             {
-              if (this.constantExpressionStack.Count > 0 && this.operatorStack.Count == 0)    // Not enough operators.
-                throw new FormatException("Operators missing to join LHS constant expression to root expression.");
-              if (this.constantExpressionStack.Count == 0 && this.operatorStack.Count > 1)    // Not enough constants.
-                throw new FormatException("Constants missing to join LHS constant expression to root expression.");
-
-              this.RootExpression = this.Visit(this.RootExpression);  // Iteratively modifies this builder's RootExpression.
-            } while (operatorStack.Count != 0 || constantExpressionStack.Count != 0);
+              i++;
+              term = this.expressionTerms[i];
+              nextTerm = i + 1 < this.expressionTerms.Count ? this.expressionTerms[i+1] : "none";
+            }
+            else
+              unstackable = true; // Enable unstacking after reaching next number in terms or end of terms.            
           }
+        }
 
-          // Finally, check case for 2 numbers attached to operator(s) to add second number to empty constantStack 
-          //    e.g. 2 3 9*+9 7-- 2 1 +*3 4-- contains 9*+9 and 7-- and +*3
-          if (numbers.Length == 2)
-            this.constantExpressionStack.Push(Expression.Constant(int.Parse(numbers[1])));
-        }     
+        // Unstack constants and operators to modify root expression for this visitor/builder and lower unstacking flag.
+        if (unstackable)
+        {
+          Unstack();
+          unstackable = false;
+        }
       }
+      this.expressionStack.Clear();  // Clear expression stack for the next expression to be built.
+      EvaluateExpression();          // Sets the result of this expression.
     }
 
     /// <summary>
-    /// Method used to join constant expressions with existing rootExpression for this visitor/builder.
+    /// Unstacks constants and assigns a new root expression with this visitor/builder's current root expression.
     /// </summary>
-    /// <param name="constantExpression"></param>
-    /// <param name="v"></param>
-    /// <returns></returns>
-    private Expression JoinExpression(ConstantExpression constantExpression, char operation)
+    private void Unstack()
     {
-     
+      // Check number of constant expressions stacked with root has 1 fewer operations from operators currently stacked.
+      if (this.expressionStack.Count == this.operatorList.Count + 1)
+      {
+        // Temporary expression used to unstack and join constants to the root expression.
+        Expression tempExpression = this.expressionStack.Pop();
 
-      return null;
+        // Iteratively re-assigns temp expression until it eventually becomes new root node.
+        int operatorsRemaining = this.operatorList.Count;
+        while (this.operatorList.Count != 0 && this.expressionStack.Count != 0 && operatorsRemaining != 0)
+        {
+          tempExpression = this.Visit(tempExpression);
+          operatorsRemaining--;
+        }
+
+        // Re-assign and stack new root expression after all constant and operator unstacking is complete.
+        this.RootExpression = tempExpression;
+        this.expressionStack.Push(this.RootExpression);
+      }
+      else  // Throw generic format exception covering cases for both number and operator formatting.
+        throw new FormatException("Cannot unstack terms; either too many operators following" +
+          "\n\t constants or not enough constants preceding operators.");
+    }
+
+    /// <summary>
+    /// Method that uses this class' VisitBinary and VisitConstant methods overridden 
+    /// to evaluate this visitor/builder's root expression. 
+    /// </summary>
+    /// <returns>Evaluated expression as a double.</returns>
+    private void EvaluateExpression()
+    {
+      Console.WriteLine($"  Rewritten: {(BinaryExpression)this.RootExpression}");
+      Expression recursiveResult = this.VisitBinary((BinaryExpression)this.RootExpression);
+      this.Result = (double)((ConstantExpression)recursiveResult).Value;
     }
 
     /// <summary>
@@ -139,54 +277,103 @@ namespace ReversePolishCalculator
     /// <returns></returns>
     public override Expression Visit(Expression node)
     {
-      // Build binary expression by visiting root to create a new root expression based 
-      // on constantExpression and operation passed in.
-      char operation = this.operatorStack.Pop();
-      switch (operation)
+      char operation = this.operatorList[0];
+      this.operatorList.RemoveAt(0);
+      return operation switch
       {
-        case '+':
-          return Expression.MakeBinary(ExpressionType.Add, this.RootExpression, constantExpressionStack.Pop());
-        case '-':
-          return Expression.MakeBinary(ExpressionType.Subtract, this.RootExpression, constantExpressionStack.Pop());
-        case '*':
-          return Expression.MakeBinary(ExpressionType.Multiply, this.RootExpression, constantExpressionStack.Pop());
-        case '/':
-          return Expression.MakeBinary(ExpressionType.Divide, this.RootExpression, constantExpressionStack.Pop());
-        case '^':
-          return Expression.MakeBinary(ExpressionType.Power, this.RootExpression, constantExpressionStack.Pop());
-        default:
-          throw new FormatException("Never reached.");
-      }
+        '+' => Expression.MakeBinary(ExpressionType.Add, node, this.expressionStack.Pop()),
+        '-' => Expression.MakeBinary(ExpressionType.Subtract, node, this.expressionStack.Pop()),
+        '*' => Expression.MakeBinary(ExpressionType.Multiply, node, this.expressionStack.Pop()),
+        '/' => Expression.MakeBinary(ExpressionType.Divide, node, this.expressionStack.Pop()),
+        '^' => Expression.MakeBinary(ExpressionType.Power, node, this.expressionStack.Pop()),
+        // Default not reachable due to prior validation of specific operators.
+        _ => throw new FormatException("Operation not recognized."),
+      };
     }
 
     /// <summary>
-    /// Visiting a binary expression node returns it in case it has a valid ExpressionType.
-    /// Valid binary expression types are for operators +, -, *, /, and ^.
+    /// Recursive method that reaches to the lowest branch of the binary expression tree and builds up a result
+    /// going back up the tree using the constants from each expression along the way back.
     /// </summary>
-    /// <param name="node"></param>
-    /// <returns></returns>
+    /// <param name="node">Expression to be evaluated for a result.</param>
+    /// <returns>Constant expression that holds this builder's result as its value.</returns>
     protected override Expression VisitBinary(BinaryExpression node)
     {
-      switch (node.NodeType)
+      // Condition for reaching end of binary tree and building it back up qith constant expressions.
+      if (node.Left.NodeType == ExpressionType.Constant && node.Right.NodeType == ExpressionType.Constant)
       {
-        case ExpressionType.Add:
-        case ExpressionType.Subtract:
-        case ExpressionType.Multiply:
-        case ExpressionType.Divide:
-        case ExpressionType.Power:
-          var right = this.Visit(node.Right);
-          var left = this.Visit(node.Left);
-          return Expression.MakeBinary(ExpressionType.Multiply, left, right);
-        default:
-          return base.VisitBinary(node);
+        ConstantExpression left = (ConstantExpression)node.Left;
+        ConstantExpression right = (ConstantExpression)node.Right;
+        return node.NodeType switch
+        {
+          ExpressionType.Add => Expression.Constant((double)left.Value + (double)right.Value),
+          ExpressionType.Subtract => Expression.Constant((double)left.Value - (double)right.Value),
+          ExpressionType.Multiply => Expression.Constant((double)left.Value * (double)right.Value),
+          ExpressionType.Divide => Expression.Constant((double)left.Value / (double)right.Value),
+          ExpressionType.Power => Expression.Constant(Math.Pow((double)left.Value, (double)right.Value)),
+          _ => base.Visit(node),
+        };
+      }
+      // Condition for re-applying this method to RHS.
+      else if (node.Left.NodeType == ExpressionType.Constant)
+      {
+        Expression nextExpression = this.VisitBinary((BinaryExpression)node.Right);
+        ConstantExpression recurseExpression = (ConstantExpression)nextExpression;
+        ConstantExpression left = (ConstantExpression)node.Left;
+
+        return node.NodeType switch
+        {
+          ExpressionType.Add => Expression.Constant((double)left.Value + (double)recurseExpression.Value),
+          ExpressionType.Subtract => Expression.Constant((double)left.Value - (double)recurseExpression.Value),
+          ExpressionType.Multiply => Expression.Constant((double)left.Value * (double)recurseExpression.Value),
+          ExpressionType.Divide => Expression.Constant((double)left.Value / (double)recurseExpression.Value),
+          ExpressionType.Power => Expression.Constant(Math.Pow((double)left.Value, (double)recurseExpression.Value)),
+          _ => base.Visit(node),
+        };
+      }
+      // Condition for re-applying this method to LHS.
+      else if (node.Right.NodeType == ExpressionType.Constant)
+      {
+        Expression nextExpression = this.VisitBinary((BinaryExpression)node.Left);
+        ConstantExpression recurseExpression = (ConstantExpression)nextExpression;
+        ConstantExpression right = (ConstantExpression)node.Right;
+
+        return node.NodeType switch
+        {
+          ExpressionType.Add => Expression.Constant((double)recurseExpression.Value + (double)right.Value),
+          ExpressionType.Subtract => Expression.Constant((double)recurseExpression.Value - (double)right.Value),
+          ExpressionType.Multiply => Expression.Constant((double)recurseExpression.Value * (double)right.Value),
+          ExpressionType.Divide => Expression.Constant((double)recurseExpression.Value / (double)right.Value),
+          ExpressionType.Power => Expression.Constant(Math.Pow((double)recurseExpression.Value, (double)right.Value)),
+          _ => base.Visit(node),
+        };
+      }
+      // Otherwise, must apply this method to both sides of expression tree.
+      else
+      {
+        Expression nextLeftExpression = this.VisitBinary((BinaryExpression)node.Left);
+        ConstantExpression recurseLeftExpresion = (ConstantExpression)nextLeftExpression;
+
+        Expression nextRightExpression = this.VisitBinary((BinaryExpression)node.Right);
+        ConstantExpression recurseRightExpresion = (ConstantExpression)nextRightExpression;
+
+        return node.NodeType switch
+        {
+          ExpressionType.Add => Expression.Constant((double)recurseLeftExpresion.Value + (double)recurseRightExpresion.Value),
+          ExpressionType.Subtract => Expression.Constant((double)recurseLeftExpresion.Value - (double)recurseRightExpresion.Value),
+          ExpressionType.Multiply => Expression.Constant((double)recurseLeftExpresion.Value * (double)recurseRightExpresion.Value),
+          ExpressionType.Divide => Expression.Constant((double)recurseLeftExpresion.Value / (double)recurseRightExpresion.Value),
+          ExpressionType.Power => Expression.Constant(Math.Pow((double)recurseLeftExpresion.Value, (double)recurseRightExpresion.Value)),
+          _ => base.Visit(node),
+        };
       }
     }
 
     /// <summary>
-    /// Visiting a constant expression returns it.
+    /// Visiting a constant expression node reflects it.
     /// </summary>
-    /// <param name="node"></param>
-    /// <returns></returns>
-    protected override Expression VisitConstant(ConstantExpression node) { return this.Visit(node); }
+    /// <param name="node">Constant expression to be reflected.</param>
+    /// <returns>Reflected constant expression.</returns>
+    protected override Expression VisitConstant(ConstantExpression node) { return node; }
   }
 }

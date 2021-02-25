@@ -13,8 +13,9 @@ namespace AsyncDBExamples
       //Start the synchronized database operation to compare to same operation, but asynchronous
       Console.WriteLine("Starting Sync Db Operation");
       DbSave();
-      Console.WriteLine("Continue...");
+      Console.WriteLine("Continue... (press any key)");
 
+      Console.ReadLine();
 
       Console.WriteLine("Starting Async Db Operation");
       var task = DbSaveAsync();
@@ -31,7 +32,7 @@ namespace AsyncDBExamples
     /// <returns></returns>
     private static async Task DbSaveAsync()
     {
-      for (int i = 0; i < 10000; i++)
+      for (int i = 0; i < 100000; i++)
       {
         Person newPerson = new Person()
         {

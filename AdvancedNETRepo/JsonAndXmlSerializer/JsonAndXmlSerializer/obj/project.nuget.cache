@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZwNXQA6eRGB4sn2ZtBytbSEL/zEfyFYxShBir+NUfDF6whigAVBl57PBVg15Di56zfLmJIMcv6uQELXRQuH2IQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\JsonAndXmlSerializer\\JsonAndXmlSerializer\\JsonAndXmlSerializer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tzieb\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
