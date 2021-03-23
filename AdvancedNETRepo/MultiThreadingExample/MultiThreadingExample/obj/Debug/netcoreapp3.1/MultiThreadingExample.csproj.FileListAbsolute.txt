@@ -1,0 +1,13 @@
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\bin\Debug\netcoreapp3.1\MultiThreadingExample.exe
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\bin\Debug\netcoreapp3.1\MultiThreadingExample.deps.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\bin\Debug\netcoreapp3.1\MultiThreadingExample.runtimeconfig.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\bin\Debug\netcoreapp3.1\MultiThreadingExample.runtimeconfig.dev.json
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\bin\Debug\netcoreapp3.1\MultiThreadingExample.dll
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\bin\Debug\netcoreapp3.1\MultiThreadingExample.pdb
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\obj\Debug\netcoreapp3.1\MultiThreadingExample.csprojAssemblyReference.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\obj\Debug\netcoreapp3.1\MultiThreadingExample.AssemblyInfoInputs.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\obj\Debug\netcoreapp3.1\MultiThreadingExample.AssemblyInfo.cs
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\obj\Debug\netcoreapp3.1\MultiThreadingExample.csproj.CoreCompileInputs.cache
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\obj\Debug\netcoreapp3.1\MultiThreadingExample.dll
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\obj\Debug\netcoreapp3.1\MultiThreadingExample.pdb
+C:\Users\tzieb\Documents\GitHub\.NETProjects\AdvancedNETRepo\MultiThreadingExample\MultiThreadingExample\obj\Debug\netcoreapp3.1\MultiThreadingExample.genruntimeconfig.cache

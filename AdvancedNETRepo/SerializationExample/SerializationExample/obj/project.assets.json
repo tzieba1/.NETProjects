@@ -727,25 +727,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\tzieb\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\SerializationExample\\SerializationExample\\SerializationExample.csproj",
+      "projectUniqueName": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\SerializationExample\\SerializationExample\\SerializationExample.csproj",
       "projectName": "SerializationExample",
-      "projectPath": "C:\\Users\\User\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\SerializationExample\\SerializationExample\\SerializationExample.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\MOHAWK_WINTER2021_SEM5\\COMP10068_Advanced.NETProgramming\\VisualStudioRepo\\SerializationExample\\SerializationExample\\obj\\",
+      "projectPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\SerializationExample\\SerializationExample\\SerializationExample.csproj",
+      "packagesPath": "C:\\Users\\tzieb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tzieb\\Documents\\GitHub\\.NETProjects\\AdvancedNETRepo\\SerializationExample\\SerializationExample\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tzieb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -758,6 +756,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "projectReferences": {}
         }
       },
@@ -769,6 +768,7 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
+        "targetAlias": "netcoreapp2.2",
         "dependencies": {
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
@@ -791,7 +791,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

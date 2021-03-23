@@ -1,0 +1,13 @@
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\bin\Debug\netcoreapp3.1\HttpListenerClassExample.exe
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\bin\Debug\netcoreapp3.1\HttpListenerClassExample.deps.json
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\bin\Debug\netcoreapp3.1\HttpListenerClassExample.runtimeconfig.json
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\bin\Debug\netcoreapp3.1\HttpListenerClassExample.runtimeconfig.dev.json
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\bin\Debug\netcoreapp3.1\HttpListenerClassExample.dll
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\bin\Debug\netcoreapp3.1\HttpListenerClassExample.pdb
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\obj\Debug\netcoreapp3.1\HttpListenerClassExample.csprojAssemblyReference.cache
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\obj\Debug\netcoreapp3.1\HttpListenerClassExample.AssemblyInfoInputs.cache
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\obj\Debug\netcoreapp3.1\HttpListenerClassExample.AssemblyInfo.cs
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\obj\Debug\netcoreapp3.1\HttpListenerClassExample.csproj.CoreCompileInputs.cache
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\obj\Debug\netcoreapp3.1\HttpListenerClassExample.dll
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\obj\Debug\netcoreapp3.1\HttpListenerClassExample.pdb
+C:\Users\tzieb\source\repos\HttpListenerClassExample\HttpListenerClassExample\obj\Debug\netcoreapp3.1\HttpListenerClassExample.genruntimeconfig.cache

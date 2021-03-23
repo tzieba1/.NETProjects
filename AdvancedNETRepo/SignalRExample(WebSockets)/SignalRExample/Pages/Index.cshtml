@@ -1,0 +1,71 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- Scripts for including ASP.NET SignalR (for WebSockets) and moment.js (for time formats) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aspnet-signalr/1.1.4/signalr.min.js" 
+        integrity="sha512-hqwtOj6waHZZoLRoJoLn0tq34JS97tR1QmhM69uvyrt3LVBiR1o0xeOVAskjUFL1L1fahQH2W7IdcMaFbqCEaw==" 
+        crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" 
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" 
+        crossorigin="anonymous">
+</script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<!-- Using some Bootstrap to format the div container below for a form. -->
+<div class="col-sm-8 col-sm-offset-4 mt-5">
+  <form id="msgForm">
+    <!-- Username field -->
+    <div class="form-group">
+      <label>Username</label>
+      <!-- Make input look nicer with bootstrap class. -->
+      <!-- autocomplete off does not remember old messages typed in during real-time chat. -->
+      <input type="text"
+             class="form-control"
+             id="username"
+             placeholder="Enter username"
+             required
+             autocomplete="off" />
+    </div>
+
+    <!-- Message field -->
+    <div class="input-group mb-3">
+      <!-- Make input look nicer with bootstrap class. -->
+      <!-- autocomplete off does not remember old messages typed in during real-time chat. -->
+      <input type="text"
+             class="form-control"
+             id="userMessage"
+             placeholder="Enter message"
+             required
+             autocomplete="off" />
+      <!-- Appears as one control with the button in a input-group-append class. -->
+      <div class="input-group-append">
+        <button id="btnSend" class="btn btn-outline-secondary" type="submit">Send</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="border">
+    <ul id="chatHistory" class="list-group overflow-auto" style="max-height:400px; height:400px;"></ul>
+  </div>
+
+  <div class="input-group mb-3">
+    <input type="text"
+           class="form-control"
+           id="roomName"
+           placeholder="Enter room name"
+           required
+           autocomplete="off" />
+    <div class="input-group-append">
+      <button id="btnJoin" class="btn btn-outline-secondary" type="submit">Join Room</button>
+    </div>
+  </div>
+</div>
